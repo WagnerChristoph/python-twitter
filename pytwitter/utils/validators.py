@@ -1,12 +1,12 @@
 """
     Parameters validators
 """
-from typing import List, Tuple, Union
+from typing import List, Tuple, Union, Optional
 
 from pytwitter.error import PyTwitterError
 
 
-def enf_comma_separated(name: str, value: Union[str, List, Tuple]):
+def enf_comma_separated(name: str, value: Optional[Union[str, List[str], Tuple[str, ...]]]):
     """
     Check to see if field's value type belong to correct type.
     If accepted, return formatted value, otherwise, raise an Error.

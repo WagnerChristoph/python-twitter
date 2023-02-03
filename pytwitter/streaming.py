@@ -230,12 +230,12 @@ class StreamApi:
         self,
         *,
         backfill_minutes: Optional[int] = None,
-        tweet_fields: Optional[Union[str, List, Tuple]] = None,
-        expansions: Optional[Union[str, List, Tuple]] = None,
-        user_fields: Optional[Union[str, List, Tuple]] = None,
-        media_fields: Optional[Union[str, List, Tuple]] = None,
-        place_fields: Optional[Union[str, List, Tuple]] = None,
-        poll_fields: Optional[Union[str, List, Tuple]] = None,
+        tweet_fields: Optional[Union[str, List[str], Tuple[str, ...]]] = None,
+        expansions: Optional[Union[str, List[str], Tuple[str, ...]]] = None,
+        user_fields: Optional[Union[str, List[str], Tuple[str, ...]]] = None,
+        media_fields: Optional[Union[str, List[str], Tuple[str, ...]]] = None,
+        place_fields: Optional[Union[str, List[str], Tuple[str, ...]]] = None,
+        poll_fields: Optional[Union[str, List[str], Tuple[str, ...]]] = None,
         return_json: bool = False,
     ):
 
