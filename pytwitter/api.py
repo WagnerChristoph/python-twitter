@@ -458,7 +458,7 @@ class Api:
         return_json: bool = False,
     ) -> Union[dict, md.Response]:
         """
-        Returns a variety of information about the Tweet specified by the requested ID or list of IDs.
+        Returns a variety of information about the Tweet(s) specified by the requested ID or list of IDs.
 
         :param tweet_ids: The IDs for target users, Up to 100 are allowed in a single request.
         :param expansions: Fields for the expansions.

@@ -9,7 +9,7 @@ from pytwitter.error import PyTwitterError
 def enf_comma_separated(name: str, value: Union[str, List, Tuple]):
     """
     Check to see if field's value type belong to correct type.
-    If accepted, return formatted value, otherwise, raise a Error.
+    If accepted, return formatted value, otherwise, raise an Error.
     :param name: The parameter field name.
     :param value: Value for provide.
     :return: Formatted comma-separated list

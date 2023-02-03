@@ -460,7 +460,7 @@ class RateLimit:
 
         :param url: api query url.
         :param headers: api response headers.
-        :param method: request method
+        :param method: request methode
         :return:
         """
         endpoint = self.url_to_endpoint(url=url)
